@@ -7,5 +7,23 @@
         "otherInfo": "A playful little Arach that helps wherever they can. Curious in nature and creatures. But scared of bugs.",
         "image": "images/ari.png",
         "link": "https://toyhou.se/30105215.ari"
-}
+},
+    {
+        "owner": "nocteil_",
+        "name": "Sai",
+        "region": "Open Wilds",
+        "height": "5'10",
+        "otherInfo": ". . .",
+        "image": "images/sai.png",
+        "link": "-- IGNORE --"
+    },
+    {
+        "owner": "nocteil_",
+        "name": "Xion",
+        "region": "Open Wilds",
+        "height": "5'10",
+        "otherInfo": ". . .",
+        "image": "images/xion.png",
+        "link": "-- IGNORE --"
+    }
 ]

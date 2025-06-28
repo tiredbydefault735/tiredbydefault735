@@ -1,23 +1,89 @@
+/* Grundlayout */
 body {
-    font-family: sans-serif;
-    background: #f3f3f3;
-    padding: 2rem;
-  }
-  
-  .card {
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    margin: 1rem 0;
-    padding: 1rem;
-    display: flex;
-    gap: 1rem;
-  }
-  
-  .character-img {
-    width: 120px;
-    height: auto;
-    border-radius: 4px;
-    object-fit: cover;
-  }
-  
+  font-family: 'Segoe UI', sans-serif;
+  background: #eaf7ec;
+  color: #2f4235;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #2e7d32;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  background-color: #66bb6a;
+}
+
+/* Überschrift */
+h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: #2e7d32;
+}
+
+/* Kartenlayout */
+#card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* Einzelkarte */
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.02);
+}
+
+/* Info-Block */
+.card .info {
+  padding: 1.2rem;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: #1b5e20;
+}
+
+/* Bild */
+.full-image {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  background: #f1f8f2;
+}
