@@ -59,11 +59,11 @@ body.region-burned-plate h2 { color: #d69292; border-color: #b84f4f; }
 body.region-burned-plate .region-intro { color: #edb2b2; }
 
 body.region-spores {
-  background: linear-gradient(to bottom, #3c2d4a, #514763, #66567c);
+  background: linear-gradient(to bottom, #255122, #2f5c2d, #336e3d);
 }
-body.region-spores h1 { color: #c7aae6; border-color: #8754b8; }
-body.region-spores h2 { color: #b797d6; border-color: #8754b8; }
-body.region-spores .region-intro { color: #d2b7ed; }
+body.region-spores h1 { color: #90e48a; border-color: #49ba37; }
+body.region-spores h2 { color: #90e48a; border-color: #49ba37; }
+body.region-spores .region-intro { color: #b4efa9; }
 
 body.region-corrupted {
   background: linear-gradient(to bottom, #1a1a30, #2e2e47, #4a4a5f);
@@ -167,7 +167,7 @@ body.region-corrupted .region-intro { color: #b7b7ed; }
 }
 
 .region-spores .region-button.active {
-  background: #8754b8;
+  background: #52ab39;
   color: #f3e6ff;
 }
 
