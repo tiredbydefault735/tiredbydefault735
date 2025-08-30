@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+  
+  </style>
+</head>
+<body>
+    <div id="popup">
+        <div class="popup" id="popup-class">
+            <img id="popup_image" src="pics/Sai_Chibi.png">
+            <h2>One moment!</h2>
+            <p>The following chapters may include sensitive content as descriptions or images. Please be advised.</p>
+            <p>Content Includes:<br>- Cannibalism<br>- Gore<br>- Melting alive</p>
+            <button type="button">I understand</button>
+        </div>
+    </div>
+  <nav class="navbar">
+    <ul>
+        <li><a href="creator.html">About the Creator</a></li>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="species.html">Planet Astras</a></li>
+    </ul>
+  </nav>
+  
+<div>
+<img style="max-width:400px ; position:fixed ; bottom:5px ; right:5px ;" src="pics/Sai_Chibi.png">
+</div>
+
+<main>
+  <div class="container">
+  <h1>Welcome to planet Astras!</h1>
+  <p>This is the world of Astras, a beautiful yet dangerous planet inhabited by creatures of the dark.</p>
+  <p>The planet is split into 8 big regions spanning across it. Each region decorated with its own flora and fauna.</p>
+  </div>
+</main>
+    <script>
+        window.onload = function() {
+            // Check if user has already seen the popup
+            if (!localStorage.getItem('popupShown')) {
+                document.getElementById('popup').classList.add('active');
+                document.querySelector('#popup button').addEventListener('click', function() {
+                    document.getElementById('popup').classList.remove('active');
+                    // Save to localStorage that user has seen the popup
+                    localStorage.setItem('popupShown', 'true');
+                });
+            }
+        };
+    </script>
+</body>
+</html>
