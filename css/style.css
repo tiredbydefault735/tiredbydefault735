@@ -40,13 +40,20 @@ body.container-creator .navbar a.active {
 body.container-creator .container {
   background-color: rgba(255, 255, 255, 0.07);
 }
-body.container-creator img {
+body.container-creator img #pfp {
   align-self: center;
   border-radius: 0%;
   width: 100%;
   height: auto;
   max-width: 100%;
   display: block;
+}
+
+body.container-creator img #chibi {
+  max-width:400px ; 
+  position:fixed ; 
+  bottom:5px ; 
+  right:5px ;
 }
 
 /* Region-specific styles */
@@ -353,6 +360,13 @@ footer {
 img {
     border-radius: 25%;
     height: 200px;
+}
+
+img #chibi {
+  max-width:400px ; 
+  position:fixed ; 
+  bottom:5px ; 
+  right:5px ;
 }
 .imageflex { 
   display: flex; 
