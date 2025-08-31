@@ -2,11 +2,12 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="pics/Sai_Skull.png">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About the Creator</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="container-creator">
     <nav class="navbar">
         <ul>
             <li><a href="creator.html" class="active">About the Creator</a></li>
@@ -17,12 +18,58 @@
 <div id="chibi">
 <img style="max-width:400px ; position:fixed ; bottom:5px ; right:5px ;" src="pics/Sai_Chibi.png">
 </div>
- <div class="container">
-	<h2>About the Creator of Astras</h2>
+ <div id="creator" class="container">
+	<h1>About the Creator of Astras</h1>
 	<div class="imageflex">
-		<img id="pfp" src="pics/new_blue_pfp.png">
-		<p class="imageflexcontent">Hey there!</p>
-	</div>
+		<img id="pfp" src="pics/test.png">
+        <div class="imageflexcontent">
+		<p>Heya! My name is Nocteil and I am the creator of Planet Astras and the Arachfara species.</p>
+        <p>Here is a little info about me!</p>
+        <ul>
+            <li>21 Years old</li>
+            <li>From Germany</li>
+            <li>Self proclaimed Caffeine Queen</li>
+            <li>IT Apprenticeship (Last year! Yay!)</li>
+            <li>Drawing furry stuff mostly</li>
+        </ul>
+        <div class="creator-nav">
+            <ul>
+                <li><button class="creator-button active" data-creator="blue">Blue</button></li>
+                <li><button class="creator-button" data-creator="nocteil">Nocteil</button></li>
+                <li><button class="creator-button" data-creator="sai">Sai</button></li>
+            </ul>
+        </div>
+        
+        <div id="blue" class="creator active">
+            <article>
+                <h2>Blue the Wolf & Husky Mix</h2>
+                <p>Blue is my main sona and also my first ever sona. She is pretty much me but make it blue dog. And the fact she is married and has a tattoo and I have not either of those atm. She first was created between 2014 and 2016, heavily inspired by FNAF. Now she is your averade blue dog.</p>
+                <p>Some facts about her:</p>
+                <ul>
+                    <li>She is 21 years old</li>
+                    <li>She enjoys music, rainy days, coffee, art and similar</li>
+                    <li>Usually wears hoodies or longer t-shirts</li>
+                    <li>Rarely ever wears tight clothing, never revealing things</li>
+                    <li>Any hairstyle goes!</li>
+                </ul>
+                <img id="refs" src="pics/Blue Ref.png" alt="Blue Reference">
+            </article>
+        </div>
+        <div id="nocteil" class="creator">
+            <article>
+                <h2>Nocteil Reference</h2>
+                <img id="refs" src="pics/Nocteil Ref.png" alt="Nocteil Reference">
+            </article>
+        </div>
+        <div id="sai" class="creator">
+            <article>
+                <h2>Sai Reference</h2>
+                <img id="refs" src="pics/Sai_Open_Wilds.png" alt="Sai Reference">
+            </article>
+        </div>
+    </div>
 </div>
+
+<script src="js/creator.js"></script>
 </body>
 </html>
